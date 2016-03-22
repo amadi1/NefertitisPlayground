@@ -409,13 +409,28 @@ ol {
 }
 
 ul {
-  margin: .7em 0;
-  padding-left: 1.35em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-ul li {
-  padding-left: 10px;
-  background: transparent url(../images/chevron.png) left 6px no-repeat;
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
 }
 
 blockquote {
