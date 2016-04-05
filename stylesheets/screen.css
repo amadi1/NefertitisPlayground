@@ -140,7 +140,7 @@ header {
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 700px;
   top: 38px;
 }
 
@@ -269,7 +269,8 @@ span.banner-fix {
 
 section#main_content {
   z-index: 2;
-  padding: 20px 82px 0;
+  width: 670px;
+  text-align: center;
   min-height:185px;
 }
 
