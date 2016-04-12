@@ -27,7 +27,13 @@
                 // Animation complete.
               });
             });
-         })
+         $( "#JidennaButton" ).click(function() {
+              $( "#JidennaIframe" ).animate({
+                height: "315px"
+              }, 1000, function() {
+                // Animation complete.
+              });
+            });
       </script>
       <title>Nefertiti's Playground by Amadi1</title>
    </head>
@@ -60,6 +66,8 @@
             <p id="nasButton">Click here to see a Nas video</p>
             <p><iframe id="nasIframe" width="560" height="0" src="https://www.youtube.com/embed/NW55FRXlPEs" frameborder="0" allowfullscreen></iframe></p>
             <p> Jidenna <a href ="http://jidenna.com/"> Page</a></p>
+            <p> id= "JidennaButton"> Click here to see a Jidenna video</p>
+            <p><iframe id="JidennaIframe" width="560" height="0" src="https://www.youtube.com/embed/YF8WPsyA0aE" frameborder="0" allowfullscreen></iframe></p>
             <p> Janelle Monae <a href="http://www.jmonae.com/"> Page</a></p>
             <p>Masego <a href="http://www.masegomusic.com/"> Page</a>.</p>
             <p>Erykah Badu <a href ="http://erykah-badu.com/newssystem/news.php"> Page</a></p>
