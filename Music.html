@@ -1,74 +1,62 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset='utf-8'>
-      <meta http-equiv="X-UA-Compatible" content="chrome=1">
-      <meta name="viewport" content="width=640">
-      <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-      <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-      <link rel="stylesheet" href="stylesheets/github-light.css">
-      <script type="text/javascript" src="javascripts/modernizr.js"></script>
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-      <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-      <script type="text/javascript">
-         $(document).ready(function () {
-           $('#main_content').headsmart();
-           $( "#kendrickButton" ).click(function() {
-              $( "#kendrickIframe" ).animate({
-                height: "315px"
-              }, 1000, function() {
-                // Animation complete.
-              });
-            });
-            $( "#nasButton" ).click(function() {
-              $( "#nasIframe" ).animate({
-                height: "315px"
-              }, 1000, function() {
-                // Animation complete.
-              });
-            });
-         $( "#JidennaButton" ).click(function() {
-              $( "#JidennaIframe" ).animate({
-                height: "315px"
-              }, 1000, function() {
-                // Animation complete.
-              });
-            });
-        $( "#janelleButton" ).click(function() {
-          $( "#janelleIframe" ).animate({
-            height: "315px"
-          }, 1000, function() {
-            // Animation complete.
-          });
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+        function attachExpansionEvent(buttonName, iframeName, height)
+        {
+            $(buttonName).click(function() {
+                $(iframeName).animate({
+                    height: height + "px"
+                }, 1000, function() {
+                    // Animation complete.
+                });
+            });    
+        }
+        $(document).ready(function() {
+            $('#main_content').headsmart();
+            attachExpansionEvent("#kendrickButton", "#kendrickIframe", 315);
+            attachExpansionEvent("#nasButton", "#nasIframe", 315);
+            attachExpansionEvent("#JidennaButton", "#JidennaIframe", 315);
+            attachExpansionEvent("#janelleButton", "#janelleIframe", 315);
+            attachExpansionEvent("#masegoButton", "#masegoIframe", 450);
         });
-        $( "#masegoButton" ).click(function() {
-          $( "#masegoIframe" ).animate({
-            height: "450px"
-          }, 1000, function() {
-            // Animation complete.
-          });
-        });
-         });
-    
-      </script>
-      <title>Nefertiti's Playground by Amadi1</title>
-   </head>
-   <!--<body style="background-image:url('turquoise-03.jpg');">-->
-   <body>
-      <ul>
-         <li><a href="index.html">Home</a></li>
-         <li><a href="howtogit.html">How to Git</a></li>
-         <li><a href="about.html">About Amadi</a></li>
-         <li><a href="Artist.html">Artist</a></li>
-         <li><a href="Resources.html">Resources</a></li>
-         <li><a href="Music.html">Music</a></li>
-         <li><a href="Literature.html">Literature</a></li>
-      </ul>
-      <div class="shell">
-         <header style="text-align:center;margin-bottom: 20px">
-            <img src= "images/download.png"/>
-         </header>
-         <section id="main_content">
+    </script>
+    <title>Nefertiti's Playground by Amadi1</title>
+</head>
+<!--<body style="background-image:url('turquoise-03.jpg');">-->
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a>
+        </li>
+        <li><a href="howtogit.html">How to Git</a>
+        </li>
+        <li><a href="about.html">About Amadi</a>
+        </li>
+        <li><a href="Artist.html">Artist</a>
+        </li>
+        <li><a href="Resources.html">Resources</a>
+        </li>
+        <li><a href="Music.html">Music</a>
+        </li>
+        <li><a href="Literature.html">Literature</a>
+        </li>
+    </ul>
+    <div class="shell">
+        <header style="text-align:center;margin-bottom: 20px">
+            <img src="images/download.png" />
+        </header>
+        <section id="main_content">
             <p> Music is a unifying motif amongst all people: regardless of our differences in race, religion, sexual orientation, and etc.</p>
             <p> People tune in all over the world to their favorite songs after a long day, to relax, or to share with friends.</p>
             <p> When I tune in... it's to listen to the newest rap and R and B.</p>
@@ -76,26 +64,40 @@
             <p>Some artist are:</p>
             <p> Kendrick Lamar <a href="http://www.kendricklamar.com/">Page</a>.</p>
             <p id="kendrickButton">Click here to see a Kendrick Lamar video</p>
-            <p><iframe id="kendrickIframe" width="560" height="0" src="https://www.youtube.com/embed/Z938ya2fbPo" frameborder="0" allowfullscreen></iframe></p>
-            <p>J Cole <a href ="http://www.jcolemusic.com/"> Page</a></p>
+            <p>
+                <iframe id="kendrickIframe" width="560" height="0" src="https://www.youtube.com/embed/Z938ya2fbPo" frameborder="0" allowfullscreen></iframe>
+            </p>
+            <p>J Cole <a href="http://www.jcolemusic.com/"> Page</a>
+            </p>
             <p>Nas </p>
             <p id="nasButton">Click here to see a Nas video</p>
-            <p><iframe id="nasIframe" width="560" height="0" src="https://www.youtube.com/embed/NW55FRXlPEs" frameborder="0" allowfullscreen></iframe></p>
-            <p> Jidenna <a href ="http://jidenna.com/"> Page</a></p>
+            <p>
+                <iframe id="nasIframe" width="560" height="0" src="https://www.youtube.com/embed/NW55FRXlPEs" frameborder="0" allowfullscreen></iframe>
+            </p>
+            <p> Jidenna <a href="http://jidenna.com/"> Page</a>
+            </p>
             <p id="JidennaButton">Click here to see a Jidenna video</p>
-            <p><iframe id="JidennaIframe" width="560" height="0" src="https://www.youtube.com/embed/YF8WPsyA0aE" frameborder="0" allowfullscreen></iframe></p>
-            <p> Janelle Monae <a href="http://www.jmonae.com/"> Page</a></p>
+            <p>
+                <iframe id="JidennaIframe" width="560" height="0" src="https://www.youtube.com/embed/YF8WPsyA0aE" frameborder="0" allowfullscreen></iframe>
+            </p>
+            <p> Janelle Monae <a href="http://www.jmonae.com/"> Page</a>
+            </p>
             <p id="janelleButton">Click here to see a Janelle video</p>
-            <p><iframe id= "janelleIframe" width="560" height="0" src="https://www.youtube.com/embed/0OkB6p_FZAw" frameborder="0" allowfullscreen></iframe></p>
-            
+            <p>
+                <iframe id="janelleIframe" width="560" height="0" src="https://www.youtube.com/embed/0OkB6p_FZAw" frameborder="0" allowfullscreen></iframe>
+            </p>
             <p>Masego <a href="http://www.masegomusic.com/"> Page</a>.</p>
             <p id="masegoButton">Click here to listen to Masego music</p>
-            <p><iframe id="masegoIframe" width="100%" height="0" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/95924826&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></p>
-            <p>Erykah Badu <a href ="http://erykah-badu.com/newssystem/news.php"> Page</a></p>
+            <p>
+                <iframe id="masegoIframe" width="100%" height="0" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/95924826&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            </p>
+            <p>Erykah Badu <a href="http://erykah-badu.com/newssystem/news.php"> Page</a>
+            </p>
             <p>Bionic supergroup <a href="http://wondaland.com/">Wondaland Records</a>.</p>
             <p>Drake</p>
             etc.</p>
-         </section>
-      </div>
-   </body>
+        </section>
+    </div>
+</body>
+
 </html>
