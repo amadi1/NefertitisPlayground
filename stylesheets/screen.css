@@ -598,3 +598,6 @@ dd p:first-child {
 	padding-top:20px;
 	padding-bottom:10px;
 }
+html {
+  overflow-y: scroll;
+}
