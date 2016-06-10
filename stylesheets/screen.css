@@ -272,6 +272,8 @@ section#main_content {
   width: 670px;
   text-align: center;
   min-height:185px;
+  
+  background-color: rgba(255, 255, 255, .5);
 }
 
 /* footer */
@@ -383,6 +385,11 @@ a:hover {
   text-decoration: underline;
 }
 
+p::first-letter {
+    font-size: 150%;
+    color: #000000;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', Myriad, Calibri, sans-serif;
   font-weight: bold;
@@ -392,7 +399,8 @@ p {
   margin: .7em 0;
   width: 560px;
   color: #000000;
-  background-color: rgba(255, 255, 255, .5);
+   margin-left: auto;
+    margin-right: auto;
 }
 
 strong {
@@ -581,4 +589,10 @@ dd p:first-child {
   margin: .8em 0;
   font-size: .85em;
   font-style: italic;
+}
+
+.imageHeader {
+	width:670px;
+	text-align:center;
+	padding-top:50px;
 }
