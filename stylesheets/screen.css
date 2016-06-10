@@ -275,6 +275,7 @@ section#main_content {
   padding-top:20px;
   padding-bottom:20px;
   background-color: rgba(255, 255, 255, .5);
+  border-radius: 25px;
 }
 
 /* footer */
@@ -596,4 +597,7 @@ dd p:first-child {
 	text-align:center;
 	padding-top:20px;
 	padding-bottom:10px;
+}
+html {
+  overflow-y: scroll;
 }
