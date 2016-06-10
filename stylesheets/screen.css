@@ -272,7 +272,8 @@ section#main_content {
   width: 670px;
   text-align: center;
   min-height:185px;
-  
+  padding-top:20px;
+  padding-bottom:20px;
   background-color: rgba(255, 255, 255, .5);
 }
 
@@ -549,13 +550,12 @@ dd p:first-child {
 }
 
 .header-level-1 {
-  font-size: 1.85em;
+  font-size: 3em;
   border-bottom: .2em double #d3ccc1;
-  color: #7c334f;
+  color: #000000;
   text-align: center;
   font-style: italic;
-  margin: 1.1em 0 .38em;
-  line-height: 1.2;
+  margin: .1em 0 .38em;
   padding-bottom: 10px
 }
 
@@ -594,5 +594,6 @@ dd p:first-child {
 .imageHeader {
 	width:670px;
 	text-align:center;
-	padding-top:50px;
+	padding-top:20px;
+	padding-bottom:10px;
 }
